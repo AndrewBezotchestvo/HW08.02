@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "F:\\Unity\\Shooter\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A7FEC6DC-F79B-B98E-4C85-31DA3C9D3FFE}|Assembly-CSharp.csproj|f:\\unity\\shooter\\assets\\script\\weaponcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7FEC6DC-F79B-B98E-4C85-31DA3C9D3FFE}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\weaponcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A7FEC6DC-F79B-B98E-4C85-31DA3C9D3FFE}|Assembly-CSharp.csproj|F:\\Unity\\Shooter\\assets\\script\\shooting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A7FEC6DC-F79B-B98E-4C85-31DA3C9D3FFE}|Assembly-CSharp.csproj|f:\\unity\\shooter\\assets\\script\\shooting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A7FEC6DC-F79B-B98E-4C85-31DA3C9D3FFE}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\shooting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A7FEC6DC-F79B-B98E-4C85-31DA3C9D3FFE}|Assembly-CSharp.csproj|f:\\unity\\shooter\\assets\\script\\playermove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7FEC6DC-F79B-B98E-4C85-31DA3C9D3FFE}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\playermove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A7FEC6DC-F79B-B98E-4C85-31DA3C9D3FFE}|Assembly-CSharp.csproj|F:\\Unity\\Shooter\\assets\\script\\weaponcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7FEC6DC-F79B-B98E-4C85-31DA3C9D3FFE}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\weaponcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A7FEC6DC-F79B-B98E-4C85-31DA3C9D3FFE}|Assembly-CSharp.csproj|F:\\Unity\\Shooter\\assets\\script\\playerrotations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A7FEC6DC-F79B-B98E-4C85-31DA3C9D3FFE}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\playerrotations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7FEC6DC-F79B-B98E-4C85-31DA3C9D3FFE}|Assembly-CSharp.csproj|F:\\Unity\\Shooter\\assets\\script\\playermove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7FEC6DC-F79B-B98E-4C85-31DA3C9D3FFE}|Assembly-CSharp.csproj|solutionrelative:assets\\script\\playermove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A7FEC6DC-F79B-B98E-4C85-31DA3C9D3FFE}|Assembly-CSharp.csproj|F:\\Unity\\Shooter\\assets\\script\\pointimpact.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,26 +42,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "WeaponController.cs",
               "DocumentMoniker": "F:\\Unity\\Shooter\\Assets\\Script\\WeaponController.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\WeaponController.cs",
               "ToolTip": "F:\\Unity\\Shooter\\Assets\\Script\\WeaponController.cs",
               "RelativeToolTip": "Assets\\Script\\WeaponController.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAIwDwAAABwAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAiwBQAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-27T15:25:23.456Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Shooting.cs",
               "DocumentMoniker": "F:\\Unity\\Shooter\\Assets\\Script\\Shooting.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\Shooting.cs",
               "ToolTip": "F:\\Unity\\Shooter\\Assets\\Script\\Shooting.cs",
               "RelativeToolTip": "Assets\\Script\\Shooting.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAgwCkAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAE0AAAAAAAAAAADwv1UAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-27T12:34:47.052Z",
               "EditorCaption": ""
@@ -80,19 +80,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "PlayerRotations.cs",
               "DocumentMoniker": "F:\\Unity\\Shooter\\Assets\\Script\\PlayerRotations.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\PlayerRotations.cs",
               "ToolTip": "F:\\Unity\\Shooter\\Assets\\Script\\PlayerRotations.cs",
               "RelativeToolTip": "Assets\\Script\\PlayerRotations.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAQwCcAAABtAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAA1wCcAAABtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-21T23:18:55.833Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "PlayerMove.cs",
               "DocumentMoniker": "F:\\Unity\\Shooter\\Assets\\Script\\PlayerMove.cs",
               "RelativeDocumentMoniker": "Assets\\Script\\PlayerMove.cs",
@@ -100,8 +100,7 @@
               "RelativeToolTip": "Assets\\Script\\PlayerMove.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAQwAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-21T22:58:04.543Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-21T22:58:04.543Z"
             },
             {
               "$type": "Document",

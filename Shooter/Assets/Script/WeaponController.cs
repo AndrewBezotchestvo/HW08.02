@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class WeaponController : MonoBehaviour
 {
+    [SerializeField] Transform _weapon0;
+    [SerializeField] Vector3 _weapon0ActivePosition;
+    [SerializeField] Vector3 _weapon0PassivePosition;
+
     [SerializeField] Transform _weapon1;
     [SerializeField] Vector3 _weapon1ActivePosition;
     [SerializeField] Vector3 _weapon1PassivePosition;
@@ -14,7 +18,7 @@ public class WeaponController : MonoBehaviour
 
     [SerializeField] KeyCode _triggerKey = KeyCode.C;
 
-    private int _weaponIndex = 1;
+    [SerializeField] private int _weaponIndex = 0;
 
     private Quaternion localRotation;
 
@@ -22,7 +26,7 @@ public class WeaponController : MonoBehaviour
 
     private void Start()
     {
-        localRotation = _weapon1.localRotation;
+        localRotation = _weapon0.localRotation;
     }
 
     private void Update()
@@ -31,7 +35,7 @@ public class WeaponController : MonoBehaviour
         {
             _canChange = false;
             _weaponIndex += 1;
-            if (_weaponIndex > 1)
+            if (_weaponIndex > 2)
             {
                 _weaponIndex = 0;
             }
@@ -39,13 +43,20 @@ public class WeaponController : MonoBehaviour
             switch (_weaponIndex)
             {
                 case 0:
-                    _weapon1.gameObject.SetActive(true);
-                    _weapon1.localPosition = _weapon1ActivePosition;
-                    _weapon1.localRotation = localRotation;
+                    _weapon0.gameObject.SetActive(true);
+                    _weapon0.localPosition = _weapon0ActivePosition;
+                    _weapon0.localRotation = localRotation;
                     StartCoroutine(Takeoff(_weapon2));
                     Invoke("TakeOffWeapon2", 1);
                     break;
                 case 1:
+                    _weapon1.gameObject.SetActive(true);
+                    _weapon1.localPosition = _weapon1ActivePosition;
+                    _weapon1.localRotation = localRotation;
+                    StartCoroutine(Takeoff(_weapon0));
+                    Invoke("TakeOffWeapon0", 1);
+                    break;
+                case 2:
                     _weapon2.gameObject.SetActive(true);
                     _weapon2.localPosition = _weapon2ActivePosition;
                     _weapon2.localRotation = localRotation;
@@ -57,6 +68,10 @@ public class WeaponController : MonoBehaviour
 
     }
 
+    private void TakeOffWeapon0()
+    {
+        _weapon0.gameObject.SetActive(false);
+    }
     private void TakeOffWeapon1()
     {
         _weapon1.gameObject.SetActive(false);

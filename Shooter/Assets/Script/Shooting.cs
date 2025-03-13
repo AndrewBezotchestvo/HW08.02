@@ -3,6 +3,7 @@ using UnityEngine.UIElements;
 using UnityEngine.UI;
 using TMPro;
 
+[RequireComponent(typeof(LineRenderer))]
 public class Shooting : MonoBehaviour
 {
     [SerializeField] private PointImpact _bullet;
@@ -13,6 +14,7 @@ public class Shooting : MonoBehaviour
     [SerializeField] private float _bulletDelay = 0.1f;
     [SerializeField] private TMP_Text _distanseText;
 
+    private LineRenderer _lineRenderer;
 
     private float _bulletTime = 0;
 
@@ -30,6 +32,10 @@ public class Shooting : MonoBehaviour
     private void Start()
     {
         _camera = GetComponentInParent<Camera>();
+        _lineRenderer = GetComponentInParent<LineRenderer>();
+        _lineRenderer.positionCount = 2;
+        _lineRenderer.startWidth = 0.1f;
+        _lineRenderer.endWidth = 0.1f;
     }
 
     private void Update()
@@ -66,6 +72,26 @@ public class Shooting : MonoBehaviour
                 Shoot();
             }
         }
+
+        if (_typeOfGun == 3)
+        {
+            if (Input.GetMouseButton(0))
+            {
+                _lineRenderer.enabled = true;
+                Vector3 targetPosition = LaserShoot();
+                if (targetPosition != Vector3.zero)
+                {
+                    _lineRenderer.SetPosition(0, _startPointRay.position);
+                    _lineRenderer.SetPosition(1, targetPosition);
+                    _lineRenderer.material.color = Random.ColorHSV();
+                }
+                
+            }
+            else
+            {
+                _lineRenderer.enabled = false;
+            }
+        }
     }
 
     private void Shoot()
@@ -79,6 +105,21 @@ public class Shooting : MonoBehaviour
         }
 
         Debug.DrawRay(_ray.origin, _ray.direction * 1000);
+    }
+
+    private Vector3 LaserShoot()
+    {
+        _ray = new Ray(_startPointRay.position, _camera.transform.forward);
+        Debug.DrawRay(_ray.origin, _ray.direction * 1000);
+
+        if (Physics.Raycast(_ray, out _raycastHit))
+        {
+            return _raycastHit.point;
+        }
+        else
+        {
+            return Vector3.zero;
+        }
     }
 
     private Vector3 GetRandomVector()
